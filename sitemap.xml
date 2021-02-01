@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/02/01/webp%E6%A0%BC%E5%BC%8F%E5%9B%BE%E7%89%87/</loc>
+    
+    <lastmod>2021-02-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/01/31/My-First-Blog/</loc>
     
     <lastmod>2021-01-31</lastmod>
@@ -11,7 +18,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,7 +28,14 @@
   
   <url>
     <loc>http://example.com/categories/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%B8%B8%E6%88%8F%E6%94%BB%E7%95%A5/</loc>
+    <lastmod>2021-02-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
