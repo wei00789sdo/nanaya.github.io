@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-01T15:26:42.810Z</updated>
+  <updated>2021-02-03T06:02:19.675Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>股神日常语录</title>
+    <link href="http://example.com/2021/02/03/%E8%82%A1%E7%A5%9E%E6%97%A5%E5%B8%B8%E8%AF%AD%E5%BD%95/"/>
+    <id>http://example.com/2021/02/03/%E8%82%A1%E7%A5%9E%E6%97%A5%E5%B8%B8%E8%AF%AD%E5%BD%95/</id>
+    <published>2021-02-03T05:58:38.000Z</published>
+    <updated>2021-02-03T06:02:19.675Z</updated>
+    
+    <content type="html"><![CDATA[<p>2021.02.03 </p><ul><li>实习生的声音把我听硬了</li><li>我要硫酸泡吊</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;2021.02.03 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实习生的声音把我听硬了&lt;/li&gt;
+&lt;li&gt;我要硫酸泡吊&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+      
+    
+    
+    
+    <category term="死亡笔记" scheme="http://example.com/categories/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="死亡笔记" scheme="http://example.com/tags/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>黑月(黑蛇)</title>
