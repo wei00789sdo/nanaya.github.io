@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-14T13:44:49.103Z</updated>
+  <updated>2021-04-03T07:42:02.024Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/03/14/%E6%97%A5%E5%85%83%E6%B1%87%E7%8E%87%E7%9B%91%E6%8E%A7/"/>
     <id>http://example.com/2021/03/14/%E6%97%A5%E5%85%83%E6%B1%87%E7%8E%87%E7%9B%91%E6%8E%A7/</id>
     <published>2021-03-14T13:21:27.000Z</published>
-    <updated>2021-03-14T13:44:49.103Z</updated>
+    <updated>2021-04-03T07:42:02.024Z</updated>
     
-    <content type="html"><![CDATA[<p>由于自己没有意识加上懒，不知不觉日元汇率跌了这么多都不知道，如果打算回国的话，自己的存款一定得在一个高点兑换掉比较好。</p><p>想了想采取一个笨办法，写个脚本自动获取每天日元兑人民币的汇率，加入电脑开机启动，给一个设定值，达到了后就弹窗提醒我这种形式（不选择发邮件的形式是因为基本不看自己的邮箱ヽ(ー_ー)ノ）。</p><p>搜了一下找了个接口: <a href="https://api.exchangerate-api.com/v4/latest/JPY">https://api.exchangerate-api.com/v4/latest/JPY</a></p><p>会直接返回json格式的数据，处理起来很方便，python也只需要requests.get取一下即可。</p><p>由于是Win10系统，弹窗就用了win32api库，写好了直接丢启动文件里就行了。</p><pre><code>&#39;&#39;&#39;pythonimport requestsimport loggingimport jsonfrom decimal import *import win32api,win32conimport timedef main():    time.sleep(60)    response= requests.get(&quot;https://api.exchangerate-api.com/v4/latest/JPY&quot;)    today_rate = Decimal(json.loads(response.text)[&quot;rates&quot;][&quot;CNY&quot;])    print(today_rate)    ##提醒OK消息框    if(today_rate&gt;0.06):        win32api.MessageBox(0, str(today_rate), &quot;今日日元汇率&quot;,win32con.MB_OK)if __name__ == &quot;__main__&quot;:    # execute only if run as a script    main()&#39;&#39;&#39;</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>由于自己没有意识加上懒，不知不觉日元汇率跌了这么多都不知道，如果打算回国的话，自己的存款一定得在一个高点兑换掉比较好。</p><p>想了想采取一个笨办法，写个脚本自动获取每天日元兑人民币的汇率，加入电脑开机启动，给一个设定值，达到了后就弹窗提醒我这种形式（不选择发邮件的形式是因为基本不看自己的邮箱ヽ(ー_ー)ノ）。</p><p>搜了一下找了个接口: <a href="https://api.exchangerate-api.com/v4/latest/JPY">https://api.exchangerate-api.com/v4/latest/JPY</a></p><p>会直接返回json格式的数据，处理起来很方便，python也只需要requests.get取一下即可。</p><p>由于是Win10系统，弹窗就用了win32api库，写好了直接丢启动文件里就行了。</p><p>‘’’python<br>import requests<br>import logging<br>import json<br>from decimal import *<br>import win32api,win32con<br>import time<br>def main():<br>    time.sleep(60)<br>    response= requests.get(“<a href="https://api.exchangerate-api.com/v4/latest/JPY&quot;">https://api.exchangerate-api.com/v4/latest/JPY&quot;</a>)<br>    today_rate = Decimal(json.loads(response.text)[“rates”][“CNY”])<br>    print(today_rate)<br>    ##提醒OK消息框<br>    if(today_rate&gt;0.06):<br>        win32api.MessageBox(0, str(today_rate), “今日日元汇率”,win32con.MB_OK)<br>if <strong>name</strong> == “<strong>main</strong>“:<br>    # execute only if run as a script<br>    main()<br>‘’’python</p>]]></content>
     
     
       
