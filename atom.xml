@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-07T12:45:17.357Z</updated>
+  <updated>2021-04-07T13:51:45.162Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,17 +18,17 @@
   
   <entry>
     <title>滑动窗口</title>
-    <link href="http://example.com/2021/04/07/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
-    <id>http://example.com/2021/04/07/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
+    <link href="http://example.com/2021/04/07/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/"/>
+    <id>http://example.com/2021/04/07/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/</id>
     <published>2021-04-07T12:37:16.000Z</published>
-    <updated>2021-04-07T12:45:17.357Z</updated>
+    <updated>2021-04-07T13:51:45.162Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>*使用场景<br>  滑动窗口算法通常用来解决字符串子串的搜索或数组的子数组的检索，可以减少时间复杂度,leetcode刷题中大量可见。</p><p>*leetcode<br>    03<br>    Given a string s, find the length of the longest substring without repeating characters.<br>    Example 1:<br>    Input: s = “abcabcbb”<br>    Output: 3<br>    Explanation: The answer is “abc”, with the length of 3.</p><p>*python3解法<br>    ‘’’python<br>    class Solution:<br>        def lengthOfLongestSubstring(self, s: str) -&gt; int:<br>            savedchars={}<br>            start=max_length=0</p><pre><code>        for i in range(len(s)):            if s[i] in savedchars and savedchars[s[i]] &gt;=start:                start=savedchars[s[i]]+1            else:                max_length=max(max_length,i-start+1)            savedchars[s[i]]=i        return max_length&#39;&#39;&#39;</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h1><p>*###使用场景<br>  滑动窗口算法通常用来解决字符串子串的搜索或数组的子数组的检索，可以减少时间复杂度,leetcode刷题中大量可见。</p><p>*###leetcode<br>    03<br>    Given a string s, find the length of the longest substring without repeating characters.<br>    Example 1:<br>    Input: s = “abcabcbb”<br>    Output: 3<br>    Explanation: The answer is “abc”, with the length of 3.</p><p>*###python3解法<br>    ‘’’python<br>    class Solution:<br>        def lengthOfLongestSubstring(self, s: str) -&gt; int:<br>            savedchars={}<br>            start=max_length=0<br>            for i in range(len(s)):<br>                if s[i] in savedchars and savedchars[s[i]] &gt;=start:<br>                    start=savedchars[s[i]]+1<br>                else:<br>                    max_length=max(max_length,i-start+1)<br>                savedchars[s[i]]=i<br>            return max_length<br>    ‘’’</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;滑动窗口算法&quot;&gt;&lt;a href=&quot;#滑动窗口算法&quot; class=&quot;headerlink&quot; title=&quot;滑动窗口算法&quot;&gt;&lt;/a&gt;滑动窗口算法&lt;/h1&gt;&lt;p&gt;*使用场景&lt;br&gt;  滑动窗口算法通常用来解决字符串子串的搜索或数组的子数组的检索，可以减少时间复杂度,le</summary>
+    <summary type="html">&lt;h1 id=&quot;滑动窗口算法&quot;&gt;&lt;a href=&quot;#滑动窗口算法&quot; class=&quot;headerlink&quot; title=&quot;滑动窗口算法&quot;&gt;&lt;/a&gt;滑动窗口算法&lt;/h1&gt;&lt;p&gt;*###使用场景&lt;br&gt;  滑动窗口算法通常用来解决字符串子串的搜索或数组的子数组的检索，可以减少时间复杂度</summary>
       
     
     
