@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-07T14:20:10.810Z</updated>
+  <updated>2021-04-26T12:15:07.316Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react如何给页面加title</title>
+    <link href="http://example.com/2021/04/26/react%E5%A6%82%E4%BD%95%E7%BB%99%E9%A1%B5%E9%9D%A2%E5%8A%A0title/"/>
+    <id>http://example.com/2021/04/26/react%E5%A6%82%E4%BD%95%E7%BB%99%E9%A1%B5%E9%9D%A2%E5%8A%A0title/</id>
+    <published>2021-04-26T12:04:01.000Z</published>
+    <updated>2021-04-26T12:15:07.316Z</updated>
+    
+    <content type="html"><![CDATA[<p>上周接到一个需求: 将各个子画面的页面title显示出来<br>html中是在<code>&lt;head&gt;</code>标签中进行title的定义的。<br>但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。<br>顾名思义，给你的页面加个头盔套在外面www。<br>举个例子↓</p><hr><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;Helmet&#125; <span class="keyword">from</span> <span class="string">&quot;react-helmet&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Application</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render () &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        &lt;div className=<span class="string">&quot;application&quot;</span>&gt;</span><br><span class="line">            &lt;Helmet&gt;</span><br><span class="line">                &lt;meta charSet=<span class="string">&quot;utf-8&quot;</span> /&gt;</span><br><span class="line">                &lt;title&gt;My Title&lt;/title&gt;</span><br><span class="line">                &lt;link rel=<span class="string">&quot;canonical&quot;</span> href=<span class="string">&quot;http://mysite.com/example&quot;</span> /&gt;</span><br><span class="line">            &lt;/Helmet&gt;</span><br><span class="line">            ...</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>另外，子组件中定义的<code>&lt;Helmet&gt;</code>会覆盖母组件，所以只要在子组件定义之后，就可以不用管母组件title了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上周接到一个需求: 将各个子画面的页面title显示出来&lt;br&gt;html中是在&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;标签中进行title的定义的。&lt;br&gt;但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。&lt;br&gt;顾名思义，给你的</summary>
+      
+    
+    
+    
+    <category term="react" scheme="http://example.com/categories/react/"/>
+    
+    
+    <category term="前端 react" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF-react/"/>
+    
+  </entry>
   
   <entry>
     <title>滑动窗口</title>
