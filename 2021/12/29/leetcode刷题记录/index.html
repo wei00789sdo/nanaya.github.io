@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>react如何给页面加title | Nanaya's Blog</title>
+  <title>leetcode刷题记录(2%) | Nanaya's Blog</title>
   <meta name="author" content="七夜" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,20 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="前端 react" />
+    <meta name="keywords" content="算法" />
   
-  <meta name="description" content="上周接到一个需求: 将各个子画面的页面title显示出来html中是在&lt;head&gt;标签中进行title的定义的。但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。顾名思义，给你的页面加个头盔套在外面www。举个例子↓  1234567891011121314151617import React from &quot;react&quot;;import">
+  <meta name="description" content="预定三个月后回国，除了伴随着搬家的各种事项之外，也要开始面向面试刷题了。LeetCode Top Interview Questions 100今天是新年假期第一天，家里打扫完了之后开始做题！    1.Two SumGiven an array of integers nums and an integer target, return indices of the two numbers s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react如何给页面加title">
-<meta property="og:url" content="http://example.com/2021/04/26/react%E5%A6%82%E4%BD%95%E7%BB%99%E9%A1%B5%E9%9D%A2%E5%8A%A0title/index.html">
+<meta property="og:title" content="leetcode刷题记录(2%)">
+<meta property="og:url" content="http://example.com/2021/12/29/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Nanaya&#39;s Blog">
-<meta property="og:description" content="上周接到一个需求: 将各个子画面的页面title显示出来html中是在&lt;head&gt;标签中进行title的定义的。但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。顾名思义，给你的页面加个头盔套在外面www。举个例子↓  1234567891011121314151617import React from &quot;react&quot;;import">
+<meta property="og:description" content="预定三个月后回国，除了伴随着搬家的各种事项之外，也要开始面向面试刷题了。LeetCode Top Interview Questions 100今天是新年假期第一天，家里打扫完了之后开始做题！    1.Two SumGiven an array of integers nums and an integer target, return indices of the two numbers s">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-04-26T12:04:01.000Z">
-<meta property="article:modified_time" content="2021-04-26T12:15:07.316Z">
+<meta property="article:published_time" content="2021-12-29T08:52:33.000Z">
+<meta property="article:modified_time" content="2021-12-29T09:17:50.564Z">
 <meta property="article:author" content="七夜">
-<meta property="article:tag" content="前端 react">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@ToumaKazusa1994">
@@ -113,17 +113,17 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
-                <h1 class="kratos-entry-title text-center">react如何给页面加title</h1>
+                <h1 class="kratos-entry-title text-center">leetcode刷题记录(2%)</h1>
                 
                 <div class="kratos-post-meta text-center">
                     <span>
-                        <i class="fa fa-calendar"></i> 2021-04-26
-                        <i class="fa fa-folder"></i> 分类 <a class="label-link" href="/categories/react/">react</a>
+                        <i class="fa fa-calendar"></i> 2021-12-29
+                        <i class="fa fa-folder"></i> 分类 <a class="label-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
                         <i class="fa fa-user"></i> 作者 七夜
                         <i class="fa fa-edit"></i> 
                         
                         
-                            758
+                            ~1.97K
                         
                         字
                         
@@ -132,14 +132,36 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1619439307316"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1640769470564"></time> 前，其中的内容可能需要更新。
                 </div>
                 
+                    <div class="kratos-post-inner-toc">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Two-Sum"><span class="toc-number">1.</span> <span class="toc-text">1.Two Sum</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Add-Two-Numbers"><span class="toc-number">2.</span> <span class="toc-text">2.Add Two Numbers</span></a></li></ol>
+                    </div>
+                
                 <hr />
-                <p>上周接到一个需求: 将各个子画面的页面title显示出来<br>html中是在<code>&lt;head&gt;</code>标签中进行title的定义的。<br>但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。<br>顾名思义，给你的页面加个头盔套在外面www。<br>举个例子↓</p>
+                <hr>
+<p>预定三个月后回国，除了伴随着搬家的各种事项之外，也要开始面向面试刷题了。<br>LeetCode Top Interview Questions 100<br>今天是新年假期第一天，家里打扫完了之后开始做题！  </p>
 <hr>
-<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&quot;react&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;Helmet&#125; <span class="keyword">from</span> <span class="string">&quot;react-helmet&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Application</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render () &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">        &lt;div className=<span class="string">&quot;application&quot;</span>&gt;</span><br><span class="line">            &lt;Helmet&gt;</span><br><span class="line">                &lt;meta charSet=<span class="string">&quot;utf-8&quot;</span> /&gt;</span><br><span class="line">                &lt;title&gt;My Title&lt;/title&gt;</span><br><span class="line">                &lt;link rel=<span class="string">&quot;canonical&quot;</span> href=<span class="string">&quot;http://mysite.com/example&quot;</span> /&gt;</span><br><span class="line">            &lt;/Helmet&gt;</span><br><span class="line">            ...</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>另外，子组件中定义的<code>&lt;Helmet&gt;</code>会覆盖母组件，所以只要在子组件定义之后，就可以不用管母组件title了。</p>
+<h2 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="1.Two Sum"></a>1.Two Sum</h2><p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
+<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+<p>You can return the answer in any order.</p>
+<p>Example 1:</p>
+<p>Input: nums = [2,7,11,15], target = 9<br>Output: [0,1]<br>Output: Because nums[0] + nums[1] == 9, we return [0, 1].</p>
+<p>思路： 利用python 字典的in操作符来对迭代出的数和目标数的差进行判断</p>
+<pre><code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">twoSum</span>(<span class="params">self, nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; List[int]:</span></span><br><span class="line">    d =&#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i,num <span class="keyword">in</span> <span class="built_in">enumerate</span>(nums):</span><br><span class="line">        <span class="keyword">if</span> target-num <span class="keyword">in</span> d:</span><br><span class="line">            <span class="keyword">return</span> [i,d[target -num]]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            d[num]=i</span><br></pre></td></tr></table></figure></code></pre>
+<hr>
+<h2 id="2-Add-Two-Numbers"><a href="#2-Add-Two-Numbers" class="headerlink" title="2.Add Two Numbers"></a>2.Add Two Numbers</h2><p>You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<p>Example 1:</p>
+<p>Input: l1 = [2,4,3], l2 = [5,6,4]<br>Output: [7,0,8]<br>Explanation: 342 + 465 = 807.</p>
+<p>Example 2:</p>
+<p>Input: l1 = [0], l2 = [0]<br>Output: [0]<br>Example 3:</p>
+<p>Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]<br>Output: [8,9,9,9,0,0,0,1]</p>
+<p>主要考察链表的知识。</p>
+<pre><code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">addTwoNumbers</span>(<span class="params">self, l1: ListNode, l2: ListNode</span>) -&gt; ListNode:</span></span><br><span class="line">    carry = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    root = result = ListNode(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">while</span>(l1 <span class="keyword">or</span> l2 <span class="keyword">or</span> carry != <span class="number">0</span>):</span><br><span class="line">        v1 = <span class="number">0</span></span><br><span class="line">        v2 = <span class="number">0</span></span><br><span class="line">        <span class="keyword">if</span> l1:</span><br><span class="line">            v1 = l1.val</span><br><span class="line">            l1 = l1.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> l2:</span><br><span class="line">            v2 = l2.val</span><br><span class="line">            l2 = l2.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        sums = v1 + v2+carry</span><br><span class="line">        <span class="keyword">if</span>(sums &gt; <span class="number">9</span>):</span><br><span class="line">            result.<span class="built_in">next</span> = ListNode(val=sums % <span class="number">10</span>)</span><br><span class="line">            result = result.<span class="built_in">next</span></span><br><span class="line">            carry = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line"></span><br><span class="line">            result.<span class="built_in">next</span> = ListNode(val=sums)</span><br><span class="line">            result = result.<span class="built_in">next</span></span><br><span class="line">            carry = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> root.<span class="built_in">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></code></pre>
+<hr>
+<p>今天就先到这里，明天继续努力！<br>嘻嘻嘻</p>
 
             </div>
             
@@ -193,7 +215,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/04/26/react%E5%A6%82%E4%BD%95%E7%BB%99%E9%A1%B5%E9%9D%A2%E5%8A%A0title/",
+                text: "http://example.com/2021/12/29/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -205,9 +227,12 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/04/26/react%E5%A6%82%E4%BD%95%E7%BB%99%E9%A1%B5%E9%9D%A2%E5%8A%A0title/";
-            const title         = "「react如何给页面加title」";
-            const excerpt       = `上周接到一个需求: 将各个子画面的页面title显示出来html中是在&lt;head&gt;标签中进行title的定义的。但是在多重组件套用的情况下，需要额外进行实装，为此引入了React Helmet库。顾名思义，给你的页面加个头...`;
+            const hostUrl       = "http://example.com/2021/12/29/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/";
+            const title         = "「leetcode刷题记录(2%)」";
+            const excerpt       = `
+预定三个月后回国，除了伴随着搬家的各种事项之外，也要开始面向面试刷题了。LeetCode Top Interview Questions 100今天是新年假期第一天，家里打扫完了之后开始做题！  
+
+1.Two SumGiven a...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -226,10 +251,10 @@
                 <div class="footer-tag clearfix">
                     <div class="pull-left">
                     <i class="fa fa-tags"></i>
-                        <a class="tag-none-link" href="/tags/%E5%89%8D%E7%AB%AF-react/" rel="tag">前端 react</a>
+                        <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-04-26</span>
+                    <span>最后编辑：2021-12-29</span>
                     </div>
                 </div>
             </footer>
@@ -238,13 +263,9 @@
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
                 <div class="nav-previous clearfix">
-                    <a title=" 滑动窗口" href="/2021/04/07/滑动窗口算法/">&lt; 上一篇</a>
+                    <a title=" react如何给页面加title" href="/2021/04/26/react如何给页面加title/">&lt; 上一篇</a>
                 </div>
                 
-                
-                <div class="nav-next clearfix">
-                    <a title=" leetcode刷题记录(2%)" href="/2021/12/29/leetcode刷题记录/">下一篇 &gt;</a>
-                </div>
                 
             </nav>
         
@@ -265,7 +286,7 @@
     </div>
     <div class="textwidget">
         
-            <p class="text-center"></p>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Two-Sum"><span class="toc-number">1.</span> <span class="toc-text">1.Two Sum</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Add-Two-Numbers"><span class="toc-number">2.</span> <span class="toc-text">2.Add Two Numbers</span></a></li></ol>
         
     </div>
 </aside>
