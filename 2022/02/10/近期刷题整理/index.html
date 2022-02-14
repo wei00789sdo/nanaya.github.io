@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>react 高级特性 ->hooks" | Nanaya's Blog</title>
+  <title>近期刷题整理 | Nanaya's Blog</title>
   <meta name="author" content="七夜" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,20 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="前端 react" />
+    <meta name="keywords" content="算法" />
   
-  <meta name="description" content="最近项目里leader推荐使用一下react的高级特性，尝试了一下使用几个hook。 Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 state 以及其他的 React 特性。   基础hook有三个： 1.useState  可以让你在函数里使用state   1const [state, setState] &#x3D; useState(initialSt">
+  <meta name="description" content="整理一下近期刷题历程，各类题型及解题思路。   主要学习的算法包括以下:    二分法 双指针 滑动窗口 广度优先搜索&#x2F;深度优先搜索 动态规划 位运算 递归&#x2F;回溯  目前为止觉得最难的应该是递归&#x2F;回溯了，非常抽象很难理解- -。 二分法原理很简单，在排序好的数组中每次都以中点进行大小判断并记录左右边界。对长度为n的数组进行排序的话时间复杂度一般为 O（logn）。 双指针通常有快慢指针和对撞指针的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react 高级特性 -&gt;hooks&quot;">
-<meta property="og:url" content="http://example.com/2021/12/29/react-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7-hooks/index.html">
+<meta property="og:title" content="近期刷题整理">
+<meta property="og:url" content="http://example.com/2022/02/10/%E8%BF%91%E6%9C%9F%E5%88%B7%E9%A2%98%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="Nanaya&#39;s Blog">
-<meta property="og:description" content="最近项目里leader推荐使用一下react的高级特性，尝试了一下使用几个hook。 Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 state 以及其他的 React 特性。   基础hook有三个： 1.useState  可以让你在函数里使用state   1const [state, setState] &#x3D; useState(initialSt">
+<meta property="og:description" content="整理一下近期刷题历程，各类题型及解题思路。   主要学习的算法包括以下:    二分法 双指针 滑动窗口 广度优先搜索&#x2F;深度优先搜索 动态规划 位运算 递归&#x2F;回溯  目前为止觉得最难的应该是递归&#x2F;回溯了，非常抽象很难理解- -。 二分法原理很简单，在排序好的数组中每次都以中点进行大小判断并记录左右边界。对长度为n的数组进行排序的话时间复杂度一般为 O（logn）。 双指针通常有快慢指针和对撞指针的">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
-<meta property="article:published_time" content="2021-12-29T10:57:22.000Z">
-<meta property="article:modified_time" content="2022-01-10T01:47:47.293Z">
+<meta property="article:published_time" content="2022-02-10T09:04:58.000Z">
+<meta property="article:modified_time" content="2022-02-14T05:17:40.110Z">
 <meta property="article:author" content="七夜">
-<meta property="article:tag" content="前端 react">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/null">
 <meta name="twitter:site" content="@ToumaKazusa1994">
@@ -113,17 +113,17 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
-                <h1 class="kratos-entry-title text-center">react 高级特性 ->hooks"</h1>
+                <h1 class="kratos-entry-title text-center">近期刷题整理</h1>
                 
                 <div class="kratos-post-meta text-center">
                     <span>
-                        <i class="fa fa-calendar"></i> 2021-12-29
-                        <i class="fa fa-folder"></i> 分类 <a class="label-link" href="/categories/react/">react</a>
+                        <i class="fa fa-calendar"></i> 2022-02-10
+                        <i class="fa fa-folder"></i> 分类 <a class="label-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
                         <i class="fa fa-user"></i> 作者 七夜
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1376
+                            861
                         
                         字
                         
@@ -132,28 +132,38 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1641779267293"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1644815860110"></time> 前，其中的内容可能需要更新。
                 </div>
                 
+                    <div class="kratos-post-inner-toc">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">二分法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E6%8C%87%E9%92%88"><span class="toc-number">2.</span> <span class="toc-text">双指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="toc-number">3.</span> <span class="toc-text">滑动窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-number">4.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BFS%E3%80%81DFS-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E5%92%8C%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-number">5.</span> <span class="toc-text">BFS、DFS 广度优先搜索和深度优先搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%92%E5%BD%92-%E5%9B%9E%E6%BA%AF"><span class="toc-number">6.</span> <span class="toc-text">递归&#x2F;回溯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="toc-number">7.</span> <span class="toc-text">位运算</span></a></li></ol>
+                    </div>
+                
                 <hr />
-                <p>最近项目里leader推荐使用一下react的高级特性，尝试了一下使用几个hook。</p>
-<p>Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 state 以及其他的 React 特性。  </p>
-<p>基础hook有三个：</p>
-<p>1.useState  可以让你在函数里使用state  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const [state, setState] &#x3D; useState(initialState);</span><br></pre></td></tr></table></figure>
-<p>其中state，seteState，initialState分别为对应的state名，更新该state的函数，state的初始值。</p>
-<p>2.useEffect<br>该 Hook 接收一个包含命令式、且可能有副作用代码的函数。  </p>
-<p>很多时候你可以把它看作是react生命周期方法的替代，componentDidMount，componentDidUpdate都可以通过它来实现。  </p>
-<p>与 componentDidMount、componentDidUpdate 不同的是，传给 useEffect 的函数会在浏览器完成布局与绘制之后，在一个延迟事件中被调用。这使得它适用于许多常见的副作用场景，比如设置订阅和事件处理等情况，因为绝大多数操作不应阻塞浏览器对屏幕的更新。</p>
-<p>然而，并非所有 effect 都可以被延迟执行。例如，一个对用户可见的 DOM 变更就必须在浏览器执行下一次绘制前被同步执行，这样用户才不会感觉到视觉上的不一致。（概念上类似于被动监听事件和主动监听事件的区别。）React 为此提供了一个额外的 useLayoutEffect Hook 来处理这类 effect。它和 useEffect 的结构相同，区别只是调用时机不同。  </p>
-<p>虽然 useEffect 会在浏览器绘制后延迟执行，但会保证在任何新的渲染前执行。在开始新的更新前，React 总会先清除上一轮渲染的 effect。  </p>
-<p>另外你可以通过添加第二个参数来限制它的触发条件，比如下例里的props.source发生变化时才会触发useEffect。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">useEffect(</span><br><span class="line">  () &#x3D;&gt; &#123;</span><br><span class="line">    const subscription &#x3D; props.source.subscribe();</span><br><span class="line">    return () &#x3D;&gt; &#123;</span><br><span class="line">      subscription.unsubscribe();</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  [props.source],</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p>3.useContext<br>接收一个 context 对象（React.createContext 的返回值）并返回该 context 的当前值。当前的 context 值由上层组件中距离当前组件最近的 &lt;MyContext.Provider&gt; 的 value prop 决定。</p>
-<p>Context是react用于在组件间共享数据的一种方式，在多重组件复用的场合会很有用，省去了很繁琐的显式的传递props。</p>
-<p>当然，在组件层数并不复杂的情况下不实用也没有任何问题。</p>
-<p>4.useRef</p>
-<p>在函数式组件下是无法使用原先class组件下的REAct.creactRef函数的，想要操作dom的式样的话，需要使用这个hook。</p>
+                <p>整理一下近期刷题历程，各类题型及解题思路。  </p>
+<p>主要学习的算法包括以下:  </p>
+<ul>
+<li>二分法</li>
+<li>双指针</li>
+<li>滑动窗口</li>
+<li>广度优先搜索/深度优先搜索</li>
+<li>动态规划</li>
+<li>位运算</li>
+<li>递归/回溯</li>
+</ul>
+<p>目前为止觉得最难的应该是递归/回溯了，非常抽象很难理解- -。</p>
+<h2 id="二分法"><a href="#二分法" class="headerlink" title="二分法"></a>二分法</h2><p>原理很简单，在排序好的数组中每次都以中点进行大小判断并记录左右边界。<br>对长度为n的数组进行排序的话时间复杂度一般为 O（logn）。</p>
+<h2 id="双指针"><a href="#双指针" class="headerlink" title="双指针"></a>双指针</h2><p>通常有快慢指针和对撞指针的用法。<br>对撞指针通常用于有序数组，分为左右两指针向中间遍历。</p>
+<p>快慢指针则是两个指针从同一侧触发，以不同的策略前进，以LeetCode 141.环形链表为例,，判断给定链表中是否存在环，可以定义快慢两个指针，快指针每次增长一个，而慢指针每次增长两个，最后两个指针指向节点的值相等，则说明有环。就好像一个环形跑道上有一快一慢两个运动员赛跑，如果时间足够长，跑地快的运动员一定会赶上慢的运动员。</p>
+<h2 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h2><p>滑动窗口算法可以用以解决数组/字符串的子元素问题，它可以将嵌套的循环问题，转换为单循环问题，降低时间复杂度。<br>通过维护一个长度为一定值的窗口(左右指针)来进行操作。</p>
+<h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><p>将一个问题拆分成一个同类型的子问题来求解。<br>写出问题的状态转移方程是第一步。</p>
+<h2 id="BFS、DFS-广度优先搜索和深度优先搜索"><a href="#BFS、DFS-广度优先搜索和深度优先搜索" class="headerlink" title="BFS、DFS 广度优先搜索和深度优先搜索"></a>BFS、DFS 广度优先搜索和深度优先搜索</h2><p>广度优先搜索基本与队列绑定，没遍历一个点就检测其周围符合条件的点并加入队列以进行下一步循环，根据不同情况也需要对遍历前后做标记区分。</p>
+<p>深度优先搜索有回溯算法的思想。</p>
+<h2 id="递归-回溯"><a href="#递归-回溯" class="headerlink" title="递归/回溯"></a>递归/回溯</h2><p>这是个人感觉最难理解的算法了。<br>回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。 回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。</p>
+<h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><p>对数值类型进行处理时很多时候可以通过位运算达到更高效更简洁的效果。<br>例如 全数组的二分查找 中对相邻元素的查找的应用。0^1=1, 1^1=0, 3^1=2,2^=3</p>
+<pre><code>int num = 3;
+num ^ 1 ; // 结果为4
+</code></pre>
 
             </div>
             
@@ -207,7 +217,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://example.com/2021/12/29/react-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7-hooks/",
+                text: "http://example.com/2022/02/10/%E8%BF%91%E6%9C%9F%E5%88%B7%E9%A2%98%E6%95%B4%E7%90%86/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -219,11 +229,21 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://example.com/2021/12/29/react-%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7-hooks/";
-            const title         = "「react 高级特性 ->hooks"」";
-            const excerpt       = `最近项目里leader推荐使用一下react的高级特性，尝试了一下使用几个hook。
-Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 state 以及其他的 React 特性。  
-基础hook有三...`;
+            const hostUrl       = "http://example.com/2022/02/10/%E8%BF%91%E6%9C%9F%E5%88%B7%E9%A2%98%E6%95%B4%E7%90%86/";
+            const title         = "「近期刷题整理」";
+            const excerpt       = `整理一下近期刷题历程，各类题型及解题思路。  
+主要学习的算法包括以下:  
+
+二分法
+双指针
+滑动窗口
+广度优先搜索/深度优先搜索
+动态规划
+位运算
+递归/回溯
+
+目前为止觉得最难的应该是递归/回溯了，非常抽象很难理解- -。
+二分...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -242,10 +262,10 @@ Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 stat
                 <div class="footer-tag clearfix">
                     <div class="pull-left">
                     <i class="fa fa-tags"></i>
-                        <a class="tag-none-link" href="/tags/%E5%89%8D%E7%AB%AF-react/" rel="tag">前端 react</a>
+                        <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2022-01-10</span>
+                    <span>最后编辑：2022-02-14</span>
                     </div>
                 </div>
             </footer>
@@ -254,13 +274,9 @@ Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 stat
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
                 <div class="nav-previous clearfix">
-                    <a title=" leetcode刷题记录(2%)" href="/2021/12/29/leetcode刷题记录/">&lt; 上一篇</a>
+                    <a title=" 离开日本前TODO整理" href="/2022/01/13/离开日本前TODO整理/">&lt; 上一篇</a>
                 </div>
                 
-                
-                <div class="nav-next clearfix">
-                    <a title=" 离开日本前TODO整理" href="/2022/01/13/离开日本前TODO整理/">下一篇 &gt;</a>
-                </div>
                 
             </nav>
         
@@ -281,7 +297,7 @@ Hook 是 React 16.8 的新增特性，在不编写 class 的情况下使用 stat
     </div>
     <div class="textwidget">
         
-            <p class="text-center"></p>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">二分法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E6%8C%87%E9%92%88"><span class="toc-number">2.</span> <span class="toc-text">双指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="toc-number">3.</span> <span class="toc-text">滑动窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-number">4.</span> <span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BFS%E3%80%81DFS-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E5%92%8C%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-number">5.</span> <span class="toc-text">BFS、DFS 广度优先搜索和深度优先搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%92%E5%BD%92-%E5%9B%9E%E6%BA%AF"><span class="toc-number">6.</span> <span class="toc-text">递归&#x2F;回溯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="toc-number">7.</span> <span class="toc-text">位运算</span></a></li></ol>
         
     </div>
 </aside>
